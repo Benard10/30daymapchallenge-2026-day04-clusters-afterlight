@@ -1,0 +1,289 @@
+{
+  "mirrorRevision": "1b75d3c86fb1c84b15052ccfbcca2f6145ad3ae7",
+  "preparedAt": "2026-11-04T18:08:27.249487+00:00",
+  "annualFiles": [
+    {
+      "year": 2004,
+      "type": "file",
+      "oid": "02b2ddbf931b88beee1cb2bc9a9abd3b5709fb09",
+      "size": 413201062,
+      "lfs": {
+        "oid": "132df24905281303d73acf4de1fff466c7c82cac4636a233cf9adbab830bcd18",
+        "size": 413201062,
+        "pointerSize": 134
+      },
+      "xetHash": "089caae2e9ab51d359b73c119002e2ebbaca66b14e7135fd02be01550bf54ec9",
+      "path": "yearly/2004/SVDNB_npp_simulated_2004.tif"
+    },
+    {
+      "year": 2005,
+      "type": "file",
+      "oid": "026108724e6b77e75fd10b3ae5ce67a5172c9268",
+      "size": 411038326,
+      "lfs": {
+        "oid": "cb19bd5c5184e4067c32c6211bd8d9729885b7a2d789c139bd78cb2850b8da4e",
+        "size": 411038326,
+        "pointerSize": 134
+      },
+      "xetHash": "39382f02e0a61445dfaded321cab56164ec910c14d8934e83fedadb5a1f737b0",
+      "path": "yearly/2005/SVDNB_npp_simulated_2005.tif"
+    },
+    {
+      "year": 2006,
+      "type": "file",
+      "oid": "ac14315194f765986c7d386b38957579df369609",
+      "size": 377418760,
+      "lfs": {
+        "oid": "34aad530f7a9a5ffc0d7fad363e413542491ffa86cdc3084cee25398ea7d33eb",
+        "size": 377418760,
+        "pointerSize": 134
+      },
+      "xetHash": "8c05cf13b695686c023c821e058244be3ae9f54ec0d9dce63559aba624f1eb05",
+      "path": "yearly/2006/SVDNB_npp_simulated_2006.tif"
+    },
+    {
+      "year": 2007,
+      "type": "file",
+      "oid": "37e60b1734e29e361d9174ab5fc8f5971e376e34",
+      "size": 431795817,
+      "lfs": {
+        "oid": "70f9cb1ffed38bf99b71bf7eaba0f9762d17aa6378088fbd02942c947d60e874",
+        "size": 431795817,
+        "pointerSize": 134
+      },
+      "xetHash": "fa7c9aaf3c2f05dc32f2e3503f2d7ff8946457e4c63fb045312c5951153b2d00",
+      "path": "yearly/2007/SVDNB_npp_simulated_2007.tif"
+    },
+    {
+      "year": 2008,
+      "type": "file",
+      "oid": "3c50cc27d55b44dab06fd08ddfe0573c13064c0a",
+      "size": 405954688,
+      "lfs": {
+        "oid": "310f90068f1e5efe9b2a9375bedd1020c7b0430d2265b412442fd1de560d8a74",
+        "size": 405954688,
+        "pointerSize": 134
+      },
+      "xetHash": "f87f83c6112c1fde181b8585696fff2a4d10619deb37ee4d07dd395634800950",
+      "path": "yearly/2008/SVDNB_npp_simulated_2008.tif"
+    },
+    {
+      "year": 2009,
+      "type": "file",
+      "oid": "8fe51c3a500a9d2aa845f6bf76a2ff8c77aa8811",
+      "size": 412870106,
+      "lfs": {
+        "oid": "6b10777e234008511d646e2aec3f048c0bae7fe81a5bbbc5e20843f17c34a134",
+        "size": 412870106,
+        "pointerSize": 134
+      },
+      "xetHash": "08edd1568546f829b74711f8c2d9771a7602381766dc9019392946f827e82946",
+      "path": "yearly/2009/SVDNB_npp_simulated_2009.tif"
+    },
+    {
+      "year": 2010,
+      "type": "file",
+      "oid": "bef46b74f87bf5793557b102a4a0e500dbd34c50",
+      "size": 429063928,
+      "lfs": {
+        "oid": "18aab10d248678a9f0c165ac9cb54a99a2ee17aa0cf5af654abd26679e03bfa0",
+        "size": 429063928,
+        "pointerSize": 134
+      },
+      "xetHash": "c297c4f98432f881cec74192a136433d29eb512c95f909866803c042c939b9a4",
+      "path": "yearly/2010/SVDNB_npp_simulated_2010.tif"
+    },
+    {
+      "year": 2011,
+      "type": "file",
+      "oid": "4bada7ae22444106bda75bd61b1ee625e494676e",
+      "size": 447736454,
+      "lfs": {
+        "oid": "8c6038a0657fe89172531f61ef0e2b06af52b5e80b5701275c237cf322281530",
+        "size": 447736454,
+        "pointerSize": 134
+      },
+      "xetHash": "d2e9bc9ad0eaacd50d78979cc9348ffd1dc20c436c641fb686232f45e2c826d4",
+      "path": "yearly/2011/SVDNB_npp_simulated_2011.tif"
+    },
+    {
+      "year": 2012,
+      "type": "file",
+      "oid": "ad147ae0fbf7ab11e1a9d57ad46193b542c3efe6",
+      "size": 274576675,
+      "lfs": {
+        "oid": "b1b33fa195a58dbfd169c5cd4a4d12e8b0899f8520df834ebafad02f71772382",
+        "size": 274576675,
+        "pointerSize": 134
+      },
+      "xetHash": "c607f9e68cff0839d6692a7f3763441c89936c9e64071cf44e4ec7cded562838",
+      "path": "yearly/2012/SVDNB_npp_2012.tif"
+    },
+    {
+      "year": 2013,
+      "type": "file",
+      "oid": "91be26cfa9b9bc80fe6dc765fb1ff10cd5484a3a",
+      "size": 287006553,
+      "lfs": {
+        "oid": "68e7cd6957a833c7a722e0ecd47b3cf5de1e39709efeaa32e2f33421900669fd",
+        "size": 287006553,
+        "pointerSize": 134
+      },
+      "xetHash": "f7a8e14e5fc56a5994f4e2b0fcceab43060daa8c166e4efa496d91a7ec407010",
+      "path": "yearly/2013/SVDNB_npp_2013.tif"
+    },
+    {
+      "year": 2014,
+      "type": "file",
+      "oid": "ab9d28cc831a4572a42822fd65ffb033869dcc79",
+      "size": 292059762,
+      "lfs": {
+        "oid": "4518ee39cf4a51baa13b280a21621b78bb701c258d793fbbb59ccf98622d4477",
+        "size": 292059762,
+        "pointerSize": 134
+      },
+      "xetHash": "b08e5ee36d6c5ce5a547c7191afc01940663a0f2914b16034b87e8179393edd5",
+      "path": "yearly/2014/SVDNB_npp_2014.tif"
+    },
+    {
+      "year": 2015,
+      "type": "file",
+      "oid": "773ac694564dc2147f9c3183a044c1677dfbc7e7",
+      "size": 289700299,
+      "lfs": {
+        "oid": "3a7b91b5e1fd7b597f4010b86947fddc64d918c95a43667b4268f9b89a8e106b",
+        "size": 289700299,
+        "pointerSize": 134
+      },
+      "xetHash": "f61f6b7d46c0f660efda4183d4235c91a7c610f692f6cd250c16c886098deb7c",
+      "path": "yearly/2015/SVDNB_npp_2015.tif"
+    },
+    {
+      "year": 2016,
+      "type": "file",
+      "oid": "295aa56da1736f7eec32038fcf17e653a4183d4f",
+      "size": 296227257,
+      "lfs": {
+        "oid": "87867f1942cc9d1985a57f27db410fcb4bf04b95f704d2e65dd2b2416189c347",
+        "size": 296227257,
+        "pointerSize": 134
+      },
+      "xetHash": "5dd5413e1dd74b59b447f976c6668f54ddf85aea625f6153b45bbe104a08b85c",
+      "path": "yearly/2016/SVDNB_npp_2016.tif"
+    },
+    {
+      "year": 2017,
+      "type": "file",
+      "oid": "6e4e49140f89dd592ea722d903dc325095e61e3f",
+      "size": 295541258,
+      "lfs": {
+        "oid": "3402ad9d145b9b10b2d005ab3ad463fe0f7415edc594d35c57c453002e2e5e29",
+        "size": 295541258,
+        "pointerSize": 134
+      },
+      "xetHash": "da18146a5755db23e7c87ff49d0bc478dfa4f6a4cd870041081b11b8b9389a73",
+      "path": "yearly/2017/SVDNB_npp_2017.tif"
+    },
+    {
+      "year": 2018,
+      "type": "file",
+      "oid": "3da91d69c0c62fbb0b275a982cc2bc135d8d4aa6",
+      "size": 299769347,
+      "lfs": {
+        "oid": "2a45a8604118bbbc13b05681371c444e23758947f8ec400d8d462b75f93cec16",
+        "size": 299769347,
+        "pointerSize": 134
+      },
+      "xetHash": "cb3569b64098b3f056a1b911adc5b17be048374518441fa40ce312bc5c52cf93",
+      "path": "yearly/2018/SVDNB_npp_2018.tif"
+    },
+    {
+      "year": 2019,
+      "type": "file",
+      "oid": "ab46a530fcbc4a1020adca489e1e9bd665f4b250",
+      "size": 304911022,
+      "lfs": {
+        "oid": "03f2ffa6d6e9f78f8eb5095e6bce5f16992e0c4a9b0619ab5efb8fbfecc4869c",
+        "size": 304911022,
+        "pointerSize": 134
+      },
+      "xetHash": "6afa7512b0cc1ad1c5d2791bfd8c9741f5b65f04498ade70e18962100d60c053",
+      "path": "yearly/2019/SVDNB_npp_2019.tif"
+    },
+    {
+      "year": 2020,
+      "type": "file",
+      "oid": "6347a90b43b140297773063f9ae0eebcba6634ce",
+      "size": 298371162,
+      "lfs": {
+        "oid": "50e19fa0c63f7c2fe8ad46a830d870cf1728a6c4dba0205eedfea893762948b6",
+        "size": 298371162,
+        "pointerSize": 134
+      },
+      "xetHash": "d057da3b1c147621aebc7572dae0cbb92ada7f4f88035b99d47854695890beb2",
+      "path": "yearly/2020/SVDNB_npp_2020.tif"
+    },
+    {
+      "year": 2021,
+      "type": "file",
+      "oid": "92bdcf350859f683f7a7280ace52ff0f1dc64aed",
+      "size": 327706477,
+      "lfs": {
+        "oid": "4f5bde037ebbcc0ac4308dea7fc62eb33e887fa3d67d870b32ed71c3e57c856f",
+        "size": 327706477,
+        "pointerSize": 134
+      },
+      "xetHash": "35897362cbf897dc108335c0d21578030cfb0805df1bc436e695d43c7c3ccd71",
+      "path": "yearly/2021/SVDNB_npp_2021.tif"
+    },
+    {
+      "year": 2022,
+      "type": "file",
+      "oid": "5d75c74229cac449fd2b0625bf26bf7845c9dce7",
+      "size": 329891463,
+      "lfs": {
+        "oid": "0643eae4a6a39eb06af7a24d192eea5248d79a5faadfa80b169b922da31ab97d",
+        "size": 329891463,
+        "pointerSize": 134
+      },
+      "xetHash": "dd477a1bc132edb6bfaff21634507ca688edfd514273dbae65da11f1ea52d3b7",
+      "path": "yearly/2022/SVDNB_npp_2022.tif"
+    },
+    {
+      "year": 2023,
+      "type": "file",
+      "oid": "2e4b234f071d79c62dd0ffcc2cfc14fb14c4aadf",
+      "size": 337285312,
+      "lfs": {
+        "oid": "361ccacb84b906eb7a80645add49d0e63c62c28c574429118de5671a40b5e023",
+        "size": 337285312,
+        "pointerSize": 134
+      },
+      "xetHash": "2948c353108cc8dd9ace09191a717a5267fee968284667e9cda1009ef36933d0",
+      "path": "yearly/2023/SVDNB_npp_2023.tif"
+    },
+    {
+      "year": 2024,
+      "type": "file",
+      "oid": "51850fe9a546959347b61b825e76c85a548de845",
+      "size": 345345673,
+      "lfs": {
+        "oid": "a1e0e5c419aed2a304d8b9452fcad6da9bb8f03d762a805fac23d5dfc9e47f06",
+        "size": 345345673,
+        "pointerSize": 134
+      },
+      "xetHash": "bb59837a89393835aa1b391390e0f5d76ecac079015267d6b29cf44cff6116ae",
+      "path": "yearly/2024/SVDNB_npp_2024.tif"
+    }
+  ],
+  "auxiliaryFiles": [
+    {
+      "file": "gdp.json",
+      "sha256": "adeb8d49b91d7154402fd4a5db426f55c2500337dd0f0d22a249108cc11e5346"
+    },
+    {
+      "file": "natural-earth.json",
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "AFTERLIGHT",
+  "radianceUnit": "nW cm⁻² sr⁻¹",
+  "gdpUnit": "constant 2015 US$",
+  "resolutionDegrees": 0.0666666672,
+  "litThreshold": 1,
+  "clusterConnectivity": 8,
+  "satelliteSource": "Cheng et al. (2026), NightNet VIIRS-like annual mean composites; HKU DataHub via faviolc Hugging Face mirror",
+  "satelliteDoi": "https://doi.org/10.5194/essd-18-3449-2026",
+  "datasetDoi": "https://doi.org/10.25442/hku.31321315.v2",
+  "satelliteLicense": "CC BY 4.0",
+  "gdpSource": "World Bank WDI NY.GDP.MKTP.KD",
+  "gdpUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD",
+  "boundarySource": "Natural Earth 1:50m, public domain",
+  "methodology": "Native 15 arc-second annual radiance averaged in aligned 16×16 cells (~7.4 km at equator). Country cells assigned by all-touched rasterization; small islands may be overstated. Radiance means and lit areas use spherical cell areas. Clusters are 8-connected cells with mean radiance ≥1 nW cm−2 sr−1 across Africa before intersection with country boundaries. Concentration = country intersection area of largest intersecting cluster / country lit area. Coverage is finite radiance area / rasterized country area; litShare is lit area / finite radiance area. Invalid native pixels are excluded from cell means. GDP is constant 2015 USD; missing observations remain null. Correlations are descriptive, not causal. Early pre-VIIRS years are model-reconstructed from DMSP observations; the source is a harmonized modelled record, not uniform direct VIIRS measurements. Sensor/model uncertainty and coarse aggregation affect cluster detection. Disputed boundaries follow Natural Earth; Western Sahara excluded from sovereign-country rankings, Somaliland combined with Somalia. PNGs reprojected to Web Mercator with one fixed logarithmic colour scale across all years.",
+  "method": "Native 15 arc-second annual radiance averaged in aligned 16×16 cells (~7.4 km at equator). Country cells assigned by all-touched rasterization; small islands may be overstated. Radiance means and lit areas use spherical cell areas. Clusters are 8-connected cells with mean radiance ≥1 nW cm−2 sr−1 across Africa before intersection with country boundaries. Concentration = country intersection area of largest intersecting cluster / country lit area. Coverage is finite radiance area / rasterized country area; litShare is lit area / finite radiance area. Invalid native pixels are excluded from cell means. GDP is constant 2015 USD; missing observations remain null. Correlations are descriptive, not causal. Early pre-VIIRS years are model-reconstructed from DMSP observations; the source is a harmonized modelled record, not uniform direct VIIRS measurements. Sensor/model uncertainty and coarse aggregation affect cluster detection. Disputed boundaries follow Natural Earth; Western Sahara excluded from sovereign-country rankings, Somaliland combined with Somalia. PNGs reprojected to Web Mercator with one fixed logarithmic colour scale across all years.",
+  "mirrorRevision": "1b75d3c86fb1c84b15052ccfbcca2f6145ad3ae7",
+  "totalRadianceUnit": "nW cm−2 sr−1 × km²",
+  "rasterProjection": "EPSG:3857",
+  "rasterSize": [
+    1360,
+    1312
+  ],
+  "preparedAt": "2026-11-04T18:08:27.249487+00:00",
+  "geographicScope": "All 54 sovereign African countries, including Cabo Verde, Seychelles, Mauritius/Rodrigues and South Africa’s Prince Edward/Marion islands. Country cameraBounds may frame the mainland while statistics include all country geometry. Western Sahara is context only."
+}

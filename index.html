@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d17"><meta name="description" content="Africa after dark. Explore twenty years of night-time light clusters and their relationship with economic change.">
+  <title>AFTERLIGHT — Africa after dark</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✳</span> AFTERLIGHT <span class="brand-sub">An atlas of Africa at night</span></a><div class="header-right"><span class="edition">04 / CLUSTERS</span><button id="about-open">About the data <span aria-hidden="true">↗</span></button></div></header>
+  <main>
+    <aside id="inspector">
+      <div class="eyebrow"><i class="live-dot"></i> TWENTY YEARS IN THE MAKING</div>
+      <h1>A continent.<br> A million <em>lights.</em></h1>
+      <p class="intro">Trace the places that glow, the clusters that grow, and the economies moving alongside them.</p>
+      <label class="field-label" for="country">1 / CHOOSE A COUNTRY</label>
+      <select id="country" disabled><option value="">Choose a country...</option></select>
+      <div class="selection-heading"><h2 id="place-name">Africa</h2><span id="panel-year">2004</span></div>
+      <div class="stats summary-stats" aria-live="polite">
+        <div class="stat"><span>Night lights <small>Total light seen from space</small></span><strong id="light-change">&#8212;</strong><small id="light-change-note">Choose a country to compare</small></div>
+        <div class="stat"><span>GDP</span><strong id="gdp">&#8212;</strong><small id="gdp-change">&#8212;</small></div>
+      </div>
+      <section class="trend-section"><div class="section-title"><h3>Two stories, one timeline</h3><span id="trend-baseline">START = 100</span></div><div class="chart-key"><span class="light-key">Night lights</span><span class="gdp-key">GDP</span></div><svg id="trend" viewBox="0 0 292 112" role="img" aria-label="Night lights and GDP trends indexed to a common baseline"></svg><div class="chart-endpoints"><span>2004</span><span>2024</span></div><p id="trend-note" class="comparison-note"></p><p id="trend-reading" class="trend-reading" aria-live="polite"></p></section>
+      <details id="explore-numbers" class="explore-numbers"><summary>Explore the numbers <span>+</span></summary><div class="advanced-content"><p class="comparison-note">More detail about the selected country and year.</p>
+        <div class="primary-stat"><span class="field-label">AVERAGE BRIGHTNESS</span><div><strong id="radiance">—</strong><span class="unit">nW/cm²/sr</span></div><small id="radiance-rank">Preparing satellite observations</small></div>
+        <div class="stat"><span>Lit area <small>at the analysis scale</small></span><strong id="lit-area">—</strong><small id="clusters">—</small></div>
+        <div class="stat"><span>Light concentration <small>largest cluster / lit area</small></span><strong id="concentration">—</strong><small id="concentration-rank">—</small></div>
+      <section class="correlation"><span class="field-label">DO THEY MOVE TOGETHER?</span><label class="sr-only" for="correlation-metric">Light metric for detailed GDP correlation</label><select id="correlation-metric"><option value="totalRadiance">Total light vs GDP growth</option><option value="meanRadiance">Brightness vs GDP growth</option><option value="concentration">Concentration vs GDP growth</option></select><div><strong id="correlation">—</strong><span>Spearman ρ<br><small>annual changes · <span id="pairs">0</span> pairs</small></span></div><p id="correlation-note">Select a country to compare changes in light and GDP through time.</p></section>
+      <details class="rankings"><summary>Compare African countries <span>+</span></summary><p class="comparison-note">Countries in the selected year. Select a dot or a country below to explore.</p><svg id="scatter" viewBox="0 0 292 170" role="group" aria-label="Country GDP versus total night-time light scatterplot"></svg><p id="cross-correlation" class="comparison-note"></p><label class="sr-only" for="rank-metric">Rank countries by</label><select id="rank-metric"><option value="meanRadiance">Brightness</option><option value="concentration">Concentration</option><option value="gdp">GDP</option></select><label class="sr-only" for="rank-order">Ranking order</label><select id="rank-order"><option value="descending">Highest first</option><option value="ascending">Lowest first</option></select><ol id="rank-list"></ol></details>
+      </div></details>
+      <p class="sidebar-foot">Light is a signal of human activity.<br>It is not a direct measure of prosperity.</p>
+    </aside>
+    <section class="map-stage" aria-label="Interactive map of Africa at night">
+      <div id="map"></div>
+      <div class="map-heading"><span class="eyebrow">AFRICA / AFTER DARK</span><div id="map-caption">The shape of a continent, written in light.</div></div>
+      <div class="mobile-country-picker"><label for="map-country">CHOOSE A COUNTRY</label><select id="map-country" disabled><option value="">Choose a country...</option></select></div>
+      <div class="map-tools"><button id="overview" title="Return to Africa overview">↖ <span>Africa overview</span></button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button></div>
+      <div class="year-watermark" aria-hidden="true">2004</div>
+      <div id="status" class="status" role="status">Loading the atlas…</div>
+      <div class="map-legend"><span>NIGHT-TIME RADIANCE</span><div class="legend-ramp"></div><div><span>Faint</span><span>Bright</span></div><small>Fixed scale / ~7.4 km analysis cells</small></div>
+      <div class="observation-tag" id="observation-tag">Earlier satellite records / includes estimates</div>
+      <div class="timeline">
+        <div class="timeline-top"><div class="transport"><button id="play" aria-label="Play country timeline" disabled>▶</button><button id="previous" disabled aria-label="Previous year">‹</button><output id="year-output" for="year">2004</output><button id="next" disabled aria-label="Next year">›</button></div><div class="playback-settings"><span id="review-country">Choose a country first</span><label class="speed-label"><span class="sr-only">Playback speed</span><select id="speed"><option value="1800">1x speed</option><option value="900">2x speed</option><option value="3200">0.5x speed</option></select></label></div></div>
+        <input id="year" disabled type="range" min="2004" max="2024" value="2004" step="1" aria-label="Observation year">
+        <div class="year-ticks"><span>2004</span><span>2008</span><span>2012</span><span>2016</span><span>2020</span><span>2024</span></div>
+        <div class="timeline-bottom"><span id="playback-caption">Choose a country to start its timeline.</span></div>
+      </div>
+    </section>
+  </main>
+  <dialog id="about" aria-labelledby="about-title">
+    <div class="dialog-heading"><span class="eyebrow">READING AFTERLIGHT</span><button id="about-close" aria-label="Close data information">&times;</button></div>
+    <h2 id="about-title">What the lights can tell us.</h2>
+    <p>Explore how night lights and GDP changed across Africa from 2004 to 2024. Choose a country, then play or move through its years.</p>
+    <h3>Where the lights come from</h3>
+    <p id="source-description">We use older and newer satellite records to show how night lights changed over time. Earlier years include estimates based on older records. Each map shows an average for the whole year, not a single night.</p>
+    <h3>How we measure the lights</h3>
+    <div id="method-description">
+      <p>We group the satellite readings into cells about 7.4 km wide at the equator. This makes the map easier to explore, but it can miss small patches of light. Small islands and places near country borders are less precise.</p>
+      <p>A cluster is a group of bright cells that touch, including at their corners. We use the same brightness cutoff every year. A cluster can cross a border; each country is measured using the part inside its boundary.</p>
+      <ul class="plain-measures">
+        <li><strong>Brightness:</strong> the average strength of the light.</li>
+        <li><strong>Lit area:</strong> the land covered by cells above the brightness cutoff.</li>
+        <li><strong>Concentration:</strong> how much of a country's lit area belongs to its largest cluster.</li>
+        <li><strong>Coverage:</strong> how much land has usable readings. Lit share tells us how much of that land is bright enough to count as lit.</li>
+        <li><strong>Missing data:</strong> readings that are unavailable are left out, not treated as zero.</li>
+      </ul>
+      <p>Calculations account for the area each cell covers. The map uses the same colour scale every year, so a brighter colour always has the same meaning.</p>
+    </div>
+    <h3>Reading the GDP comparison</h3>
+    <p>GDP describes the value of goods and services produced in a country. The figures use 2015 prices to make years easier to compare without the effect of inflation.</p>
+    <p>On the chart, both lines start at 100 in the first year with data for both. A value of 200 means twice the starting amount. The Africa-wide chart compares the same set of countries throughout.</p>
+    <p>The detailed comparison checks whether yearly changes in lights and GDP tend to move together. It needs at least 10 matching year-to-year changes. Moving together does not prove that one caused the other. Lights can also come from industry and gas flaring, and lighting technology changes over time.</p>
+    <h3>Country boundaries</h3>
+    <p>We use Natural Earth boundaries consistently across all years. Western Sahara appears for context but is not included in country rankings. Somaliland is included with Somalia. These mapping choices do not express a position on disputed boundaries.</p>
+    <h3>Abbreviations</h3>
+    <dl class="abbreviations">
+      <dt>GDP</dt><dd>Gross Domestic Product: the value of goods and services produced in a country.</dd>
+      <dt>VIIRS</dt><dd>Visible Infrared Imaging Radiometer Suite: the satellite instrument used for newer night-light observations.</dd>
+      <dt>DMSP</dt><dd>Defense Meteorological Satellite Program: the older satellite programme used to reconstruct earlier years.</dd>
+      <dt>WDI</dt><dd>World Development Indicators: the World Bank's collection of development statistics.</dd>
+      <dt>USD / US$</dt><dd>United States dollars.</dd>
+      <dt>nW/cm&sup2;/sr</dt><dd>Nanowatts per square centimetre per steradian: the unit used to measure the strength of satellite-observed light.</dd>
+      <dt>&rho; (rho)</dt><dd>The symbol for the correlation score. Positive values mean changes tend to move together; negative values mean they tend to move in opposite directions.</dd>
+      <dt>PNG</dt><dd>Portable Network Graphics: the image format used for the map's yearly light layers.</dd>
+      <dt>CC BY 4.0</dt><dd>Creative Commons Attribution 4.0: a licence that allows reuse with credit to the source.</dd>
+    </dl>
+    <h3>Sources &amp; credits</h3>
+    <ul><li><a href="https://doi.org/10.5194/essd-18-3449-2026" target="_blank" rel="noreferrer">Cheng et al. (2026), night-light dataset</a> &middot; CC BY 4.0</li><li><a href="https://huggingface.co/datasets/faviolc/hku-viirs-nighttime-lights-global" target="_blank" rel="noreferrer">Annual satellite data mirror</a></li><li><a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD" target="_blank" rel="noreferrer">World Bank GDP data</a> &middot; CC BY 4.0</li><li>Natural Earth country boundaries &middot; public domain.</li><li><a href="data/methodology.json" target="_blank">Full technical method and parameters</a></li></ul>
+    <p id="data-version" class="muted"></p>
+  </dialog>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="statistics.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

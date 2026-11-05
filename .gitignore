@@ -1,0 +1,27 @@
+# Publish only the static app and its required data/credits.
+# Add new runtime files here if the app grows.
+/*
+!/.gitignore
+!/.gitattributes
+!/.nojekyll
+!/index.html
+!/app.js
+!/statistics.js
+!/styles.css
+!/icon.svg
+!/README.md
+!/data/
+
+/data/*
+!/data/atlas.json
+!/data/countries.geojson
+!/data/methodology.json
+!/data/source-manifest.json
+!/data/README.md
+!/data/lights/
+/data/lights/*
+!/data/lights/*.png
+
+# Everything else stays local, including preparation/verification scripts,
+# .cache, __pycache__, raw TIFFs, unused cluster overlays, dependencies,
+# editor settings, logs, credentials and environment files.
