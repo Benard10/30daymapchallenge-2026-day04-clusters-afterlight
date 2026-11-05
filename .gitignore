@@ -6,6 +6,7 @@
 !/.nojekyll
 !/index.html
 !/app.js
+!/dialogs.js
 !/statistics.js
 !/styles.css
 !/icon.svg

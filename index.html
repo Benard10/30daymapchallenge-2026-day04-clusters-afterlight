@@ -6,7 +6,7 @@
   <title>AFTERLIGHT — Africa after dark</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261105-guide-fix">
 </head>
 <body>
   <header><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✳</span> AFTERLIGHT <span class="brand-sub">An atlas of Africa at night</span></a><div class="header-right"><span class="edition">04 / CLUSTERS</span><button id="help-open" aria-haspopup="dialog">How to use</button><button id="about-open">About the data <span aria-hidden="true">↗</span></button></div></header>
@@ -51,7 +51,7 @@
   </main>
   <dialog id="help" aria-labelledby="help-title">
     <div class="dialog-heading"><span class="eyebrow">EXPLORE AFTERLIGHT</span><button id="help-close" aria-label="Close map guide">&times;</button></div>
-    <h2 id="help-title">How to use the map</h2>
+    <h2 id="help-title">How to use the app</h2>
     <p>Follow one country's lights and economy through twenty years.</p>
     <ol class="how-to-use">
       <li><strong>Choose a country</strong> from the menu or click it on the map. The map zooms to that country and its review starts at 2004.</li>
@@ -102,8 +102,9 @@
     <ul><li><a href="https://doi.org/10.5194/essd-18-3449-2026" target="_blank" rel="noreferrer">Cheng et al. (2026), night-light dataset</a> &middot; CC BY 4.0</li><li><a href="https://huggingface.co/datasets/faviolc/hku-viirs-nighttime-lights-global" target="_blank" rel="noreferrer">Annual satellite data mirror</a></li><li><a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD" target="_blank" rel="noreferrer">World Bank GDP data</a> &middot; CC BY 4.0</li><li>Natural Earth country boundaries &middot; public domain.</li><li><a href="data/methodology.json" target="_blank">Full technical method and parameters</a></li></ul>
     <p id="data-version" class="muted"></p>
   </dialog>
+  <script src="dialogs.js?v=20261105-guide-fix"></script>
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script src="statistics.js"></script>
-  <script src="app.js"></script>
+  <script src="statistics.js?v=20261105-guide-fix"></script>
+  <script src="app.js?v=20261105-guide-fix"></script>
 </body>
 </html>
