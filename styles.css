@@ -28,6 +28,7 @@
 .abbreviations{display:grid;grid-template-columns:100px 1fr;gap:12px 16px;font-size:12px;line-height:1.7}.abbreviations dt{color:var(--gold);font-weight:600}.abbreviations dd{margin:0;color:#b3becb}.plain-measures li{margin-bottom:7px}.plain-measures strong{color:var(--text)}@media(max-width:420px){.abbreviations{grid-template-columns:1fr;gap:3px}.abbreviations dd{margin-bottom:12px}}
 
 /* Country review: reserve the panel for the selector, changes and full chart. */
+.how-to-use{padding-left:20px}.how-to-use li{padding-left:3px;margin-bottom:10px}.how-to-use strong{color:var(--text)}
 #inspector.has-selection{display:flex;flex-direction:column;gap:0;padding:18px 24px 14px;overflow:hidden}
 .has-selection>.explore-numbers,.has-selection>.sidebar-foot,.has-selection .trend-reading{display:none}
 .has-selection>.eyebrow{flex-shrink:0;font-size:8px;margin-bottom:14px}
